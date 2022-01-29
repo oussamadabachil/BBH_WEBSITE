@@ -9,16 +9,17 @@ let img_change_js = document.querySelector(".change_img")
 var counter = 1;
 menu_Butt.addEventListener("click",()=>{
   counter +=1
-
   if(counter%2==0){
+
+    img_change_js.setAttribute("src","./asset/cross_icon.png")
     menu_Show.classList.toggle("mobile_menu_show")
     body_js.setAttribute("style","overflow-y:hidden")
-    img_change_js.setAttribute("src", "./asset/cross_icon.png");
+    
   }else{
+    img_change_js.setAttribute("src","./asset/menu-3.png")
+
     menu_Show.classList.toggle("mobile_menu_show")
     body_js.setAttribute("style","overflow:scroll")
-    img_change_js.setAttribute("src", "./asset/cross_icon.png");
-
   }
 
 })

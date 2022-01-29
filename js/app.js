@@ -20,11 +20,13 @@ menu_Butt.addEventListener("click",()=>{
 
   if(counter%2==0){
 
-
+    img_change_js.setAttribute("src","./asset/cross_icon.png")
     menu_Show.classList.toggle("mobile_menu_show")
     body_js.setAttribute("style","overflow-y:hidden")
     
   }else{
+    img_change_js.setAttribute("src","./asset/menu-3.png")
+
     menu_Show.classList.toggle("mobile_menu_show")
     body_js.setAttribute("style","overflow:scroll")
   }
