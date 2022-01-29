@@ -26,11 +26,11 @@
 .banniere_service>h1{
     font-weight: 700;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
   background: linear-gradient(90deg, #000, #fff, #000);
-  letter-spacing: 5px;
+  letter-spacing: .5rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -154,3 +154,14 @@
 
     line-height: 2rem;
 }
+
+#mobile{
+    display: none;
+}
+
+#desk{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+

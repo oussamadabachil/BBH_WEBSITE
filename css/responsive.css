@@ -1,4 +1,15 @@
 @media (max-width: 1000px) {
+    #desk{
+        display: none;
+    }
+    
+    #mobile{
+        display: block;
+        margin: 7.5rem auto -2rem;
+        width: 100%;
+    }
+    
+    
     .desk{
         display: none;
     }
@@ -11,6 +22,10 @@
         display: none;
         width: 100%;
         margin: 0 auto;
+      }
+      .first_img_faq{
+          display: block;
+          margin-top: -2rem;
       }
     summary{
         text-align: left;
@@ -53,7 +68,7 @@ details[open] summary {
   footer>.section_summary{
       display: block;
       position: absolute;
-      z-index: 20;
+      z-index: 12;
       height: auto;
   }
   .section_summary>details>ul{
@@ -238,7 +253,7 @@ footer>section>ul>li>a{
 header>.menu_mobile{
     top: 3.5rem;
     position: fixed;
-    z-index: 15;
+    z-index: 31;
     display: grid;
     align-items: center;
     width: 100%;
@@ -277,7 +292,7 @@ width: 100%;
 }
 
 .mobile_menu_show{
-    z-index: 21;
+    z-index: 100;
     transition: all .3s;
     left: 0rem;
     top: 4rem;
@@ -330,7 +345,8 @@ width: 100%;
 .banniere_service>h1{
     font-weight: 700;
   text-align: center;
-  font-size: 1.6rem;
+  white-space: nowrap;
+  font-size: 1.3rem;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
   background: linear-gradient(90deg, #000, #fff, #000);
