@@ -1,0 +1,156 @@
+.banniere_service{
+    z-index: 3;
+    background-image: url(../asset/renaultbalck.webp);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 90vh;
+}
+.voile{
+    filter:brightness(0);
+    z-index: 4;
+    animation-name: bright;
+    animation-duration: 4s; /* or: Xms */
+    animation-iteration-count: 1;
+    animation-direction: normal; /* or: normal */
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: forwards; /* or: backwards, both, none */
+    animation-delay: 2s; /* or: Xms */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.banniere_service>h1{
+    font-weight: 700;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+  
+  /*  Checkout my other pens on  https://codepen.io/grohit/  */
+  
+
+
+@keyframes bright{
+    from{
+        filter: brightness(0);
+
+    }
+    to{
+        filter: brightness(1);
+
+    }
+}
+
+.renault_grid{
+    
+    text-align: justify;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+}
+.renault_grid>ul>li:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+.renault_grid>ul>li{
+    padding: .5rem;
+    font-size: 1.2rem;
+    list-style: none;
+    color: white;
+}
+.renault_grid>ul>li>img{
+
+    margin-top: 2rem;
+    display: block;
+    width: 20%;
+    margin-left: 3vw; 
+}
+
+.renault_grid>ul>li:last-child{
+    margin-bottom: 2rem;
+}
+
+.renault_grid>ul>li{
+    margin-left: 3vw; 
+
+}
+
+.renault_grid{
+  background-color: none;
+}
+
+
+
+.bg_renault_grid{
+    display: block;
+    width: 100%;
+    background-image: url(../asset/nosservivec2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.parcours_client{
+    background-image: url(../asset/BBHPIECEAUTO_fond_services.jpg);
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    grid-gap: 1rem;
+
+}
+.parcours_client>div{
+    display: block;
+    margin: 0 auto;
+}
+.parcours_client>div>h2{
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 1.4rem;
+
+}
+
+.parcours_client>div>p{
+    font-size: 1.3rem;  
+    padding: 1rem;
+    text-align: center;
+    color: white;
+
+    line-height: 2rem;
+}

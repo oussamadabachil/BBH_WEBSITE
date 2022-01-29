@@ -1,0 +1,856 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+.mobile_menu_hide{
+  display: none;
+}
+.aproposimg_mobile{
+  display: none;
+}
+
+header>.waterproof>p{
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.aproposimg{
+  display: block;
+  width:90%;
+  margin: 0 auto;
+}
+header>.waterproof{
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 12;
+background-color: rgb(127, 125, 128);
+
+}
+header .desktop_menu ul{
+    top: 3rem;
+    align-items: center;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+
+}
+.cross_stop{
+  border: .2rem  solid black;
+  position: absolute;
+  font-size: 1.4rem;
+  right:-2.6rem;
+  top: 0;
+  padding: 1.3rem;
+  background-color: white;
+}
+.show_car_info{
+  z-index: 20;
+  display: none;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 45rem;
+  transform: translate(-50%,-50%);
+  background-color: rgb(255, 255, 255);
+}
+
+.show_car_info_show{
+  z-index: 20;
+  display: block;
+  width: 50rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 45rem;
+  transform: translate(-50%,-50%);
+  background-color: rgb(255, 255, 255);
+}
+.show_car_info>div>div{
+  position: relative;
+}
+.show_car_info>div>div>p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  text-transform: uppercase;
+}
+.effect_bright{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(61, 58, 58, 0.836);
+  z-index: 7;
+  display: none;
+
+}
+.cara_car{
+  display: none;
+  overflow-y: scroll;
+  height: 70%;
+
+
+}
+
+.cara_car>ul{
+  padding: 1rem;
+
+
+}
+.cara_car>ul>li{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  list-style: none;
+  margin: 1rem;
+}
+.show{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(61, 58, 58, 0.466);
+  z-index: 7;
+  display: block;
+
+}
+.show_car_info>.img_face{
+  height: 65%;
+  width: 100%;
+
+  background-image: url(../asset/photofacerenault.JPG);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-position: center center;
+}
+.grid_img_car{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 95%;
+  margin: 0 auto;
+  
+grid-gap: .5rem;  
+  height: 25%;
+}.grid_img_car>div{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+header .desktop_menu ul li a img{
+  display: block;
+  width: 7.5rem;
+  margin-top: .5rem;
+}
+header .desktop_menu ul li{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    list-style: none;
+    padding: 1rem;
+    transition: all .3s;
+
+    text-align: center;
+}
+header .desktop_menu ul li a{
+    color: rgb(0, 0, 0);
+    transition: all .3s;
+
+    text-decoration: none;
+}
+header .desktop_menu ul li:hover a{
+    transition: all .3s;
+
+    color:  rgb(127, 125, 128);
+
+}
+
+header .desktop_menu ul li:hover{
+    transition: all .3s;
+    color: black;
+}
+.section_summary{
+  display: none;
+}
+.section_summary>details>ul>li{
+  text-align: left;
+  display: none;
+}
+.mobile_grid_renault{
+  display: none;
+  width: 100%;
+}
+.banniere_d{
+    display: block;
+    margin: 3.5rem auto ;
+    height: 90vh;
+   /*background-color: rgb(254, 190, 72);*/
+    /*background-color: rgb(88, 164, 61);*/
+    width: 100%;
+    background-image: url(../asset/BANNIEREBBH.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+
+
+}
+.pc_grid_renault{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.list_essentials{
+    padding: 2rem;
+}
+.list_essentials>li:first-child{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    
+}
+.list_essentials>li{
+    list-style: outside;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+.body{
+  overflow: scroll;
+
+}
+.body_pause{
+  overflow-y: hidden;
+}
+
+.relative_groud{
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 0 auto 10rem;
+    height: auto;
+}
+.relative_groud>img{
+    display: block;
+    width: 45%;
+    margin-left: 20%;
+}
+
+.relative_groud>div{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 7rem;
+    right: -6rem;
+    background-color: rgba(228, 227, 227, 0.746);
+}
+/*
+*/
+.grid{
+    background-color: rgb(246, 246, 246);
+    margin: 0 auto;
+    width: 90%;
+    display: none;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid>figure>img{
+    margin: 1rem auto;
+    margin-left: 2rem;
+    display: block;
+    width: 100%;
+}
+
+.grid>figure{
+    display: block;
+    width: 70%;
+}
+
+.grid>figure>figcaption{
+    text-align: justify;
+    padding: 1rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+
+}
+
+.grid>section{
+    padding: 1.5rem;
+    width: 90%;
+    display: block;
+    margin: 2rem auto;
+    background-color: white;
+}
+
+.grid>section>ul>li{
+    list-style: inside;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+
+.list_essentials>li:first-child{
+list-style: none;
+}
+.grid>section>h1{
+    font-size: 2rem;
+}
+.grid>section>h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 100;
+
+}.grid>section>ul>li:nth-child(2){
+    list-style: none;
+    padding: 1rem;
+}
+.banniere_ventes{
+    display: grid;
+    height: 50vh;
+    background-color: beige;
+    width: 90%;
+    margin: 2rem auto;
+    grid-template-columns: repeat(2,1fr);
+}
+.banniere_ventes>.b{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+
+.banniere_ventes>.a{
+    background-image: url(../asset/lieubbh.jpg);
+    background-size: cover;
+    
+}
+
+.banniere_ventes>.b>div{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*FLIP CARD*/
+.flip_grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: -2rem auto 2rem;
+}
+.retrouver{
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 25rem;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .flip-card-back>ul>li{
+
+    font-family: sans-serif;
+  overflow-y: auto;
+font-size: 1.6rem;  
+width: 90%;
+text-align: left;
+line-height: 3rem;
+display: block;
+margin: 1rem auto;
+}
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgb(230, 88, 88);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .g{
+      position: relative;
+  }
+  .g.black_s{
+      background-color: black;
+  }
+
+  .g.black_s>ul>li{
+      color: white;
+  }
+
+  .g.white_s{
+    background-color: rgb(255, 255, 255);
+
+  }
+
+  .facade_int{
+      background-image: url(../asset/faceint.jpg);
+      background-size: cover;
+      background-position: center center;
+
+  }
+
+  .facade_ext{
+    background-image: url(../asset/faceext.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .g>ul{
+        width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+.g>ul>li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.g>ul>li:first-child{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+
+}
+
+
+
+  .fap{
+      background-image: url(../asset/service_montage.jpg);
+      background-size:cover;
+      background-position: center center;
+  }
+
+  .compteur{
+    background-image: url(../asset/compteur.jpg);
+    background-size:cover;
+    background-position: top -6rem center;
+  }
+
+  .keycart{
+    background-image: url(../asset/key_cart.jpg);
+    background-size:cover;
+    
+    
+  }
+
+  .fap_b{
+    background-image: url(../asset/servce_montage_b.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.compteur_b{
+  background-image: url(../asset/compteur_b.jpg);
+  background-size:cover;
+  background-position: top -6rem center;
+}
+
+.keycart_b{
+  background-image: url(../asset/key_cartb.jpg);
+  background-size:cover;
+  
+}
+
+/*MARQUEE*/
+
+
+:root {
+    --marquee-width:99%;
+    --marquee-height: 20vh;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+  .marqueeh3{
+      display: block;
+      margin: 6rem auto;
+  }
+  .marqueeh3>h3{
+      text-align: center;
+      font-size: 2rem;
+      font-family: sans-serif;
+  }
+  .marquee {
+    margin: 0rem auto 1rem;
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  .marquee:before {
+    left: 0;
+   }
+  .marquee:after {
+    right: 0;
+  }
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+  /* .marquee-content:hover {
+    animation-play-state: paused;
+  } */
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+  }
+  .marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+    white-space: nowrap;
+  }
+  
+  .marquee-content li img {
+    width: 100%;
+    padding-left: 2rem;
+    /* height: 100%; */
+  }
+  
+  @media (max-width: 600px) {
+    html { font-size: 12px; }
+    :root {
+      --marquee-width: 100vw;
+      --marquee-height: 16vh;
+      --marquee-elements-displayed: 3;
+    }
+    .marquee:before, .marquee:after { width: 5rem; }
+  }
+  .avis_clients{
+    position: relative;
+    width: 50%;
+      height: 5rem;
+      margin: 0 auto;
+      background-color: #eee;
+  }
+
+  .avis_clients>h3{
+      display: block;
+      font-size: 2rem;
+      font-family: sans-serif;
+      padding-top: 1.2rem;
+      text-align: center;
+  }
+
+  .bar_red{
+      width: 6rem;
+      position: absolute;
+      top: 2.9rem;
+      left: 0;
+      transform: rotate(90deg);
+      height: .3rem;
+      background-color: red;
+      
+  }
+
+  .grid_atouts{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      width: 90%;
+      height:10rem;
+      margin: 0 auto;
+  }
+  .grid_atouts>li{
+      list-style: none;
+      padding-top: 2rem;
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 1.2rem;
+  }
+
+  .grid_avis{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      height: auto;
+      width: 80%;
+      margin: 0 auto;
+  }
+.grid_avis>ul{
+  border-radius: .3rem;
+  color: white;
+  background-color:rgb(70, 70, 70) ;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+.grid_avis>ul>li{
+list-style: none;
+padding: 1rem;
+line-height: 1.5rem;
+}
+.grid_avis>ul>li:first-child{
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.grid_avis>ul>li>ul{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  list-style: none;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+.grid_avis>ul>li>ul>li>img{
+  display: block;width:100%;
+}
+.grid_info_map{
+  margin: 1rem auto;
+  display: grid;
+  height: 40vh;
+  grid-template-columns: repeat(3,1fr);
+align-items: center;
+}
+
+.grid_info_map>button{
+  display: block;
+  width: 40%;
+  padding: 1rem;
+  font-size: 1.3rem;
+border: none;
+cursor: pointer;
+transition: all .3s;
+
+  margin: 0 auto;
+}
+.grid_info_map>iframe{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.grid_info_map>ul{
+  list-style: none;
+  margin: 2rem auto;
+  display: block;
+  width: 90%;
+}
+
+.grid_info_map>ul>li{
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.grid_info_map>ul>li>a{
+  line-height: 2rem;
+  text-decoration: none;
+  
+  color: black;
+  font-weight: lighter;
+}
+.grid_info_map>ul>li>a:first-child{
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.grid_info_map>button:hover{
+  display: block;
+  width: 45%;
+  height: 3.5rem;
+  background-color: black;
+  color: white;
+  transition: all .3s;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.menu_mobile{
+  display: none;
+
+
+}
+footer{
+  position: relative;
+  background-color: #eee;
+}
+
+footer>section>ul{
+  margin-left: 5vw;
+}
+footer>section{
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80%;
+  text-align: center;
+  margin: 3rem auto -3rem;
+}
+ footer>section>ul>li:first-child{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+footer>section>ul>li{
+  text-align: left;
+  list-style: none;
+}
+
+footer>section>ul>li>a{
+  text-transform: uppercase;
+  list-style: none;
+  color: black;
+  font: 1.2rem;
+  text-decoration: none;
+  padding: .25rem;
+  line-height: 2.1rem;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+footer>img{
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+
+}
+footer p{
+  text-align: center;
+}
+
+main>img{
+  display: block;
+  width: 100%;
+}
+
+.grid_call_mail{
+  width:90%;
+  height: 4rem;
+  position: fixed;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%,-4%);
+  background-color: rgb(0, 0, 0);
+  border-radius: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  display: none;
+  margin: 0 auto;
+  z-index: 100;
+
+}
+
+.grid_call_mail>a{
+
+  color: white;
+  font-size: .7rem;
+  width: 100%;
+  text-align: center;
+  padding-top: .8rem;
+  text-decoration: none;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+.grid_call_mail>.devis_a_btn:before{
+  background-image: url(../assets/ico_mail.png);
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 1rem;
+  width: 2.2rem;
+  height: 2.3rem;
+  content: "";
+  border: .1rem solid #fdf4e9;
+  border-radius: 100%;       
+  vertical-align: middle;
+}
+.grid_call_mail>.devis_b_btn::before{
+  background-image: url(../assets/logo_phone.png);
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 1rem;
+  width: 2.2rem;
+  height: 2.3rem;
+  content: "";
+  border: .1rem solid #fdf4e9;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+
+
+
+.mobile{
+  display: none;
+}
+.desk{
+  display: block;
+  width: 100%;
+  
+}

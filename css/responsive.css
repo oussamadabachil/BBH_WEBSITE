@@ -1,0 +1,441 @@
+@media (max-width: 1000px) {
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+
+    }
+    .pc_grid_renault{
+        display: none;
+        width: 100%;
+        margin: 0 auto;
+      }
+    summary{
+        text-align: left;
+        font-size: 1.7rem;
+        width: 100%;
+        text-align: center;
+        background-color: #eee;
+        display: block;
+        line-height: 4rem;
+        transition: all .3s;
+
+    }
+   
+        
+    .aproposimg_mobile{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+      }
+    .avis_clients{
+        position: relative;
+        width: 80%;
+          height: 5rem;
+          margin: 0 auto;
+          background-color: #eee;
+      }
+     .mobile_grid_renault{
+         display: block;
+         width: 100%;
+     }
+
+      .aproposimg{
+        display: none;
+        width:90%;
+        margin: 0 auto;
+      }
+details[open] summary {
+    transition: all .3s;
+  }
+  footer>.section_summary{
+      display: block;
+      position: absolute;
+      z-index: 20;
+      height: auto;
+  }
+  .section_summary>details>ul{
+      font-size: 1.4rem;
+
+      padding: 2rem;
+  }
+  .section_summary>details>ul>li{
+      line-height: 3rem;
+      text-align: left;
+      list-style: none;
+  }
+  .section_summary>details>ul>li>a{
+      color: black;
+      padding: 1rem;
+      text-decoration: none;
+  }
+    .grid_call_mail{
+        align-items: center;
+        width:90%;
+        height: 5rem;
+        position: fixed;
+        bottom: 4%;
+        left: 50%;
+        transform: translate(-50%,-4%);
+        background-color: rgb(0, 0, 0);
+        border-radius: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto;
+        z-index: 11;
+    
+    }
+    
+    .grid_call_mail>a{
+        padding-bottom: .9rem;
+        color: white;
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    
+    .grid_call_mail>.devis_a_btn:before{
+        background-image: url(../asset/ico_mail.png);
+        background-position: center center;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 1rem;
+        width: 2.2rem;
+        height: 2.3rem;
+        content: "";
+        border: .1rem solid #fdf4e9;
+        border-radius: 100%;       ;
+        vertical-align: middle;
+    }
+    .grid_call_mail>.devis_b_btn::before{
+        background-image: url(../asset/logo_phone.png);
+        background-position: center center;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 1rem;
+        width: 2.2rem;
+        height: 2.3rem;
+        content: "";
+        border: .1rem solid #fdf4e9;
+        border-radius: 100%;       ;
+        vertical-align: middle;
+    }
+    .show_car_info_show{
+        z-index: 20;
+        width: 80%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 30rem;
+        transform: translate(-50%,-50%);
+        background-color: rgb(255, 255, 255);
+      }
+      
+    .desktop_menu
+    {
+        display: none;
+    }
+    .grid{
+        display: none;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .banniere_ventes{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: 80rem;
+    }
+
+.flip_grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.relative_groud{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto 10rem;
+    height: auto;
+}
+.relative_groud>img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid_avis{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.grid_avis>ul{
+    margin-bottom: 1rem;
+}
+
+
+.grid_info_map{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.grid_info_map>button{
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    padding: .5rem;
+    width: 50%;
+}
+.grid_info_map>div,.grid_info_map>iframe{
+    width: 100%;
+}
+footer>img{
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
+  
+  }
+
+footer>section{
+    position: absolute;
+    z-index: 13;
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0 auto -1rem;
+    background-color: #eee;
+}
+
+footer>section>ul>li:first-child{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+footer>section>ul>li>a{
+    font-size: 1.3rem;
+
+    line-height: 2.5rem;
+}
+.banniere_d{
+    display: block;
+    margin: 3.5rem auto ;
+    height: 70vh;
+    width: 100%;
+    background-image: url(../asset/BBHMOBILEAZA.jpg);
+    background-size: cover;
+    background-attachment: local;
+    background-position: center center;
+
+
+}
+
+header>.menu_mobile{
+    top: 3.5rem;
+    position: fixed;
+    z-index: 15;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+height: 6rem;
+background-color: rgb(255, 255, 255);
+}
+
+
+header .menu_mobile .first_s img{
+    width: 8rem;
+
+    top: .5rem;
+    left: 1rem;
+    position: absolute;
+}
+
+header .menu_mobile .second_s img{
+    width: 4rem;
+
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    
+    
+}
+.mobile_menu_hide{
+    display: block;
+    transition: all .7s;
+    left: -122rem;
+    position: fixed;
+height: 100vh;
+top: 4rem;
+
+width: 100%;
+}
+
+.mobile_menu_show{
+    z-index: 21;
+    transition: all .3s;
+    left: 0rem;
+    top: 4rem;
+    position: fixed;
+height: 100vh;
+z-index: 13;
+background-color: rgb(255, 255, 255);
+width: 100%;
+}
+
+.mobile_menu_show>ul{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: all .3s;
+    transform: scale(1);
+    
+    display: block;
+
+    transform: translate(-50%,-50%);
+}
+.mobile_menu_hide>ul{
+   
+    transition: all .3s;
+
+}.mobile_menu_show>ul>li{list-style: none;}
+.mobile_menu_show>ul>li>a,.mobile_menu_hide>ul>li>a{
+    font-weight: 800;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 2.6rem;
+    text-decoration: none;
+    color:  rgb(127, 125, 128);
+    line-height: 9vh;
+    transition: all .3s;
+
+
+}
+
+/*SERVICES*/
+.banniere_service{
+    z-index: 3;
+    background-image: url(../asset/renaultbalck.webp);
+    background-size: cover;
+    background-position: center left -7rem;
+    width: 100%;
+    position: relative;
+    height: 90vh;
+}
+.banniere_service>h1{
+    font-weight: 700;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+.renault_grid>ul>li:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.renault_grid>ul>li{
+    text-align: center;
+}
+.renault_grid>ul>li>img{
+
+    margin:0 auto;
+    display: block;
+    width: 20%;
+}
+.parcours_client{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.form-group>textarea{
+  
+font-size: 1.5rem;
+font-family: sans-serif;
+}
+}
+
+
+@media (max-width: 1119px) {
+.grid_img_car{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid_img_car>div:last-child{
+    display: block;
+    width: 205%;
+    margin: 0 auto;
+}
+
+}
+
+
+@media (max-width: 400px) {
+
+    .grid_atouts{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid_atouts>li{
+padding: 1rem;    }
+
+header>.waterproof>p{
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+  header>.waterproof{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+    background-color: rgb(127, 125, 128);
+
+  }
+
+
+}
+    
+@media (max-width: 530px) {
+    .relative_groud{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .relative_groud>div{
+      position: static;
+      display: block;
+      width: auto;
+      height: auto;
+      top: 0rem;
+      right: 1rem;
+      background-color: rgba(173, 194, 82, 0.39);
+      }
+      .relative_groud>img{
+      display: block;
+      width: 100%;
+      }
+ 
+}
