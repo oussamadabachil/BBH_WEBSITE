@@ -1,0 +1,49 @@
+figure{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    margin: 3rem auto;
+    align-items: center;
+}
+figure:first-child{
+    display: grid;
+    margin-top: 11rem;
+}
+figure>img{
+    display: block;
+    width: 19rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+figure>figcaption:first-child{
+    background-color: aliceblue;
+}
+figure>figcaption>h2{
+    padding: 2rem;
+    font-size: 2.4rem;
+}
+figure>.first_figcap{
+    border-radius: .3rem;
+    background-color: rgb(127, 125, 128);
+}
+
+figure>.second_figcap{
+    background-color: rgb(98, 59, 190);
+}
+figure>.first_figcap>h2{
+    color: rgb(255, 89, 185);
+}
+figure>.first_figcap>ul{
+    color: white;
+}
+figure>.second_figcap{
+    color: white;
+}
+
+figure>figcaption>ul>li{
+    padding: .75rem;
+    line-height: 3.25rem;
+    font-size: 1.7rem;
+    list-style: none;
+}

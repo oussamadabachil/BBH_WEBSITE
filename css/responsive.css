@@ -1,4 +1,9 @@
 @media (max-width: 1000px) {
+    figure{
+        display: grid;
+        margin: 12rem auto -11rem;
+        grid-template-columns: repeat(1,1fr);
+    }
     #desk{
         display: none;
     }
@@ -64,6 +69,10 @@
       }
 details[open] summary {
     transition: all .3s;
+  }
+
+  footer{
+      z-index: 12;
   }
   footer>.section_summary{
       display: block;
@@ -170,6 +179,11 @@ details[open] summary {
 .flip_grid{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+
+}
+.flip_grid>div{
+    display: block;
+    margin-top: 1rem;
 }
 .relative_groud{
     position: relative;
@@ -393,6 +407,25 @@ font-family: sans-serif;
 
 
 @media (max-width: 1119px) {
+     .relative_groud{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .relative_groud>div{
+      position: static;
+      display: block;
+      width: auto;
+      color: white;
+      height: auto;
+      top: 0rem;
+      right: 1rem;
+      background-color: rgb(127, 125, 128);
+    }
+      .relative_groud>img{
+      display: block;
+      width: 100%;
+      }
+ 
 .grid_img_car{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -408,6 +441,25 @@ font-family: sans-serif;
 
 @media (max-width: 400px) {
 
+    .relative_groud{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .relative_groud>div{
+      position: static;
+      display: block;
+      width: auto;
+      color: white;
+      height: auto;
+      top: 0rem;
+      right: 1rem;
+      background-color: rgb(127, 125, 128);
+    }
+      .relative_groud>img{
+      display: block;
+      width: 100%;
+      }
+ 
     .grid_atouts{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -444,11 +496,12 @@ header>.waterproof>p{
       position: static;
       display: block;
       width: auto;
+      color: white;
       height: auto;
       top: 0rem;
       right: 1rem;
-      background-color: rgba(173, 194, 82, 0.39);
-      }
+      background-color: rgb(127, 125, 128);
+    }
       .relative_groud>img{
       display: block;
       width: 100%;
