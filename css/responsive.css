@@ -10,7 +10,7 @@
     
     #mobile{
         display: block;
-        margin: 7.5rem auto -2rem;
+        margin: 9.5rem auto -2rem;
         width: 100%;
     }
     
@@ -359,7 +359,6 @@ width: 100%;
 .banniere_service>h1{
     font-weight: 700;
   text-align: center;
-  white-space: nowrap;
   font-size: 1.3rem;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
