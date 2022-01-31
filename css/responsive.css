@@ -1,4 +1,8 @@
 @media (max-width: 1000px) {
+    .flip-card:active .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
     figure{
         display: grid;
         margin: 12rem auto -11rem;
