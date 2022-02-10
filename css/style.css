@@ -322,6 +322,7 @@ list-style: none;
     padding: 1rem;
 }
 .banniere_ventes{
+
     display: grid;
     height: 50vh;
     background-color: beige;
@@ -337,9 +338,9 @@ list-style: none;
 }
 
 .banniere_ventes>.a{
-    background-image: url(../asset/lieubbh.jpg);
+    background-image: url(../asset/photo_1.JPG);
     background-size: cover;
-    
+    background-position: center center;
 }
 
 .banniere_ventes>.b>div{
